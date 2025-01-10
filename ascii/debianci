@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# arch logo
+col1=$(tput setaf 1)
+col2=$(tput setaf 8)
+col3=$(tput setaf 7)
+rst=$(tput sgr0)
+s=$(echo "\\")
+
+cat <<EOF
+$col1
+
+   ,. "'';.  $col2      _       _   $col1  _
+  ;        . $col2   __| | ____| |__$col1 (_)$col2 __ _ _ __$col1
+ '   ;     , $col2  / _  |/  _ |  _ \| |/ _' | '_ $s$col1
+ ;    ., ,   $col2 | (_| |  |__| |_) | | (_| | | | |$col1
+  ;          $col2  \__,_|\____|___ /|_|\__,_|_| |_|$col1
+    ;          
+      .      $col3   The Universal Operating System.
+
+$rst
+EOF
+      
+
+
+      

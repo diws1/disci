@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# arch logo
+col1=$(tput setaf 4)
+col2=$(tput setaf 7)
+rst=$(tput sgr0)
+s=$(echo "\\")
+
+cat <<EOF
+$col1
+        ,      $col2                 _    $col1 _ _
+       /#\     $col2   __ _ _ __ ___| |__ $col1| (_)_ __  _   _ _  __
+      /###\    $col2  / _' | '__/ __| '_ $s$col1| | | '_ \| | | | \/ /
+     /#####\   $col2 | (_| | | | (__| | | $col1| | | | | | |_| |>  <
+    /##,-,##\  $col2  \__,_|_|  \___|_| |_$col1|_|_|_| |_|\__,_|_/\_$s
+   /##(   )##$s
+  /#,--   --,#\ $col2  A simple, elegant GNU/Linux distribution.$col1
+ /'           '$s
+$rst
+EOF
+
+
