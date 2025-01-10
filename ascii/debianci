@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# arch logo
+# Debian
 col1=$(tput setaf 1)
 col2=$(tput setaf 8)
 col3=$(tput setaf 7)
