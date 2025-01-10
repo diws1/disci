@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# arch logo
+# Arch
 col1=$(tput setaf 4)
 col2=$(tput setaf 7)
 rst=$(tput sgr0)
