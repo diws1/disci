@@ -1,0 +1,2 @@
+# disci
+Generate distro ascii
