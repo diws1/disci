@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# arch logo
+# NixOS
 col1=$(tput setaf 12) #blue
 col2=$(tput setaf 8) #black
 rst=$(tput sgr0)
