@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Kali
+col1=$(tput setaf 4) #blue
+col2=$(tput setaf 7) #white
+col3=$(tput setaf 8) #lightblack
+rst=$(tput sgr0)
+s=$(echo "\\")
+
+cat <<EOF
+$col1
+ - ---- __,            $col2  _ _$col1
+    ----./.\ ,..\,     $col2 | (_)_ __  _   _ _  __ $col1
+ '          ;   ".\.   $col2 | | | '_ \| | | | \/ /$col1
+           !           $col2 | | | | | | |_| |>  < 
+$col2  .------.$col1  '-!, _     $col2 |_|_|_| |_|\__,_|_/\_$s
+$col2  | KALI |$col1       ';"-.    
+$col2  '- ----'$col1         !  ' $col3 BY OFFENSIVE SECURITY
+$rst
+EOF
+      
+# - ---- __,              _ _
+#    ----./.\ ,..\,      | (_)_ __  _   _ _  __ 
+# '          ;   ".\.    | | | '_ \| | | | \/ /
+#           !            | | | | | | |_| |>  < 
+#  .------.  '-!, _      |_|_|_| |_|\__,_|_/\_\
+#  | KALI |       ';"-.    
+#  '- ----'         !  '  BY OFFENSIVE SECURITY
