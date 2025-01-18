@@ -1,0 +1,82 @@
+#!/bin/bash
+
+#;  __ o __  __ o
+#; |  \||__ |   |  disci (distro ascii)
+#; |__/| __||__ |  https://github.com/diws1/disci
+#;
+
+# Get distro name
+#get shortname
+distro=$(source /etc/os-release && echo $PRETTY_NAME | awk '{print$1}')
+#some distro names are in the second word ex: Linux Mint, Linux Lite
+distro2=$(source /etc/os-release && echo $PRETTY_NAME | awk '{print$2}')
+
+# Distro ascii settings
+#add ascii image folder
+export PATH="${PATH}:/usr/bin/ascii"
+
+#sett the ascii image
+if [ $distro = Debian ]; then
+        asc="$(debianci)"
+
+elif [ $distro = Arch ]; then
+        asc="$(archci)"
+
+elif [ $distro = Void ]; then
+        asc="$(voidci)"
+
+elif [ $distro = Ubuntu ]; then
+        asc="$(ubuntuci)"
+
+elif [ $distro = Fedora ]; then
+        asc="$(fedoraci)"
+
+elif [ $distro = Manjaro ]; then
+        asc="$(manjaroci)"
+
+elif [ $distro = openSUSE ]; then
+        asc="$(opensuseci)"
+
+elif [ $distro = NixOS ]; then
+        asc="$(nixci)"
+
+elif [ $distro = Gentoo ]; then
+        asc="$(gentooci)"
+
+elif [ $distro2 = Mint ]; then
+        asc="$(mintci)"
+
+elif [ $distro = LMDE ]; then
+        asc="$(mintci)"
+
+elif [ $distro = EndeavourOS ]; then
+        asc="$(endeavourci)"
+
+elif [ $distro = Slackware ]; then
+        asc="$(slackwareci)"
+
+elif [ $distro = Alpine ]; then
+        asc="$(alpineci)"
+
+elif [ $distro = Kali ]; then
+        asc="$(kalici)"
+
+elif [ $distro = Artix ]; then
+        asc="$(artixci)"
+
+elif [ $distro = Solus ]; then
+        asc="$(solusci)"
+
+elif [ $distro = CRUX ]; then
+        asc="$(cruxci)"
+
+else
+        asc="$(defaultci)"
+
+fi
+
+# Print result
+cat <<EOF
+$asc
+EOF
+
