@@ -11,3 +11,14 @@ then run disci by typing:
 ```
 $ disci
 ```
+
+### Status
+Distro  |  Ascii
+:-------  |  :-------
+Archlinux  |  ✔️
+Debian  |  ✔️
+Voidlinux  |  ✔️
+NixOS  | ✔️
+Gentoo  |  ✔️
+Kalilinux  |  ✔️
+Ubuntu  |  ✔️
