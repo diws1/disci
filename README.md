@@ -22,3 +22,4 @@ NixOS  | ✔️
 Gentoo  |  ✔️
 Kalilinux  |  ✔️
 Ubuntu  |  ✔️
+EndeavoursOS  |  ✔️
