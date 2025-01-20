@@ -11,6 +11,10 @@ then run disci by typing:
 ```
 $ disci
 ```
+the available distro ascii can be displayed by running this command:
+```
+$ run-parts /usr/bin/ascii/
+```
 
 ### Status
 Distro  |  Ascii
